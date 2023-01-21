@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portifólio</title>
+        <link rel="icon" href="favicon.png" id="favicon">
+        <!--<link rel="stylesheet" type="text/css" href="./Portifolio.css" media="screen">-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>          
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+div {
+    display: flex;
+    justify-content: space-around;
+}
+.top {
+    height: 17.5vh;
+    background: linear-gradient(180deg, #ff5e00e0, #ffc29a, #ffe6d1);
+}
+img {
+    width: 15vw;
+    max-width: 155px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 6px #ff9955 , -1px -1px 6px #ff9955;
+}
+.img {
+    position: absolute;
+    height: 35vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.square {
+    height: 52.5vh;
+    background-color: rgb(255, 255, 255);
+    padding: 70px 0;
+    align-items: flex-end;
+}
+.box {
+    width: 25vw;
+    max-width: 350px;
+    height: 27vh;
+    background-color: rgb(231, 231, 231);
+    padding: 40px 25px;
+    color: rgb(121, 121, 121);
+    border-radius: 5%;
+    z-index: 1;
+
+}
+p {
+    display: flex;
+    width: 25vw;
+    height: 20vh;
+    margin-block: 0;
+    margin-inline: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    align-items: flex-start;    
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 0.8em;
+    flex-wrap: wrap;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+.material-icons {
+    color: rgb(121, 121, 121);
+    cursor: default;
+}
+.icon {
+    width: 100vw;
+    position: absolute;
+    padding-bottom: 30vh;
+}
+.bottom {
+    height: 30vh;
+    background-color: rgb(207, 207, 207);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input, textarea {
+    width: 350px;
+    height: 35px;
+    margin: 7px;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+}
+input:focus , textarea:focus {
+    outline: 0;
+}
+textarea {
+    height: 80px;
+    resize: none;
+    padding: 4px 2px;
+}
+#button {
+    width: 230px;
+    background-color: #ff8d4a9d;
+    cursor: pointer;
+    font: bold 15px 'Noto Sans', sans-serif;
+    color: white;
+    box-shadow: 1px 1px 1px #ff742ea4
+}
+#button:active {
+    box-shadow: 0 0 0 0 #ff742ea4, inset 1px 1px 1px 1px #ff742ea4 ;
+} 
+        </style>
+    </head>
+    
+    <body>
+        <div class="img">        
+            <img src="./foto.png" alt="ícone de perfil">
+        </div>
+        <div class="top"></div>
+        <div class="square">
+            <div class="icon">
+                <span class="material-icons" title="Pessoal">person</span>
+                <span class="material-icons" title="Acadêmico">school</span>
+                <span class="material-icons" title="Profissional">work</span>
+            </div>
+            <div class="box">
+                <p>Meu namorado, que eu amo muito, que me motiva e me inspira a estudar todos os dias</p>
+            </div>
+            <div class="box">
+                <p>Cursando graduação em Tecnologia em Sistemas para Internet.</p>
+            </div>
+            <div class="box">
+                <p>Ainda não rolou, mas a esperança é a última que morre!<br><br><br><br><br><br>Ps.: eu sei que eu ainda nem tentei.</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <input type="email" placeholder=" E-mail">
+            <input type="text" placeholder=" Nome">
+            <textarea cols="30" rows="5" placeholder=" Descrição:" maxlength="200"></textarea>
+            <input id="button" type="button" value="Enviar">
+        </div>
+    </body>
+</html>
