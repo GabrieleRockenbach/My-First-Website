@@ -27,24 +27,37 @@ img {
 .square {
     height: 52.5vh;
     background-color: rgb(255, 255, 255);
-    padding: 55px 0;
+    padding: 70px 0;
     align-items: flex-end;
 }
 .box {
     width: 25vw;
     max-width: 350px;
-    height: 30vh;
+    height: 27vh;
     background-color: rgb(231, 231, 231);
-    justify-content: flex-start;
-    padding: 60px 30px;
-    font-size: 13px;
+    padding: 40px 25px;
+    color: rgb(121, 121, 121);
     border-radius: 5%;
     z-index: 1;
+
 }
 p {
-    color: rgb(121, 121, 121);
+    display: flex;
+    width: 25vw;
+    height: 20vh;
+    margin-block: 0;
+    margin-inline: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    align-items: flex-start;    
     text-indent: 20px;
     text-align: justify;
+    font-size: 0.8em;
+    flex-wrap: wrap;
+}
+::-webkit-scrollbar {
+    width: 0px;
 }
 .material-icons {
     color: rgb(121, 121, 121);
@@ -53,7 +66,7 @@ p {
 .icon {
     width: 100vw;
     position: absolute;
-    padding-bottom: 32vh;
+    padding-bottom: 30vh;
 }
 .bottom {
     height: 30vh;
@@ -68,13 +81,15 @@ input, textarea {
     margin: 7px;
     border: none;
     border-radius: 8px;
-    padding: 0px;
     font-size: 13px;
+}
+input:focus , textarea:focus {
+    outline: 0;
 }
 textarea {
     height: 80px;
     resize: none;
-    padding: 4px 1px;
+    padding: 4px 2px;
 }
 #button {
     width: 230px;
@@ -86,4 +101,4 @@ textarea {
 }
 #button:active {
     box-shadow: 0 0 0 0 #ff742ea4, inset 1px 1px 1px 1px #ff742ea4 ;
-}
+} 
