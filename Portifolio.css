@@ -3,58 +3,54 @@
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
 }
-div {
+div,header,footer,section {
     display: flex;
     justify-content: space-around;
 }
-.top {
-    height: 17.5vh;
+.containerHeader {
+    width: 100%;
+    height: 10.6rem;
     background: linear-gradient(180deg, #ff5e00e0, #ffc29a, #ffe6d1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5.3rem;
 }
-img {
-    width: 15vw;
+
+.imgContainer {
+    position: absolute;
+    top:5.3rem;
+}
+
+.imgContainer > img {
+    width: 100%;
     max-width: 155px;
     border-radius: 50%;
     box-shadow: 1px 1px 6px #ff9955 , -1px -1px 6px #ff9955;
 }
-.img {
-    position: absolute;
-    height: 35vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-}
+
 .square {
-    height: 52.5vh;
     background-color: rgb(255, 255, 255);
-    padding: 70px 0;
-    align-items: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 .box {
-    width: 25vw;
+    width: 100%;
     max-width: 350px;
-    height: 27vh;
+    min-width: 230px;
+    height: 250px;
     background-color: rgb(231, 231, 231);
     padding: 40px 25px;
+    margin: 0px 20px;
     color: rgb(121, 121, 121);
     border-radius: 5%;
-    z-index: 1;
-
+    display: block;
 }
-p {
-    display: flex;
-    width: 25vw;
-    height: 20vh;
-    margin-block: 0;
-    margin-inline: 0px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-    align-items: flex-start;    
-    text-indent: 20px;
+
+p { 
     text-align: justify;
     font-size: 0.8em;
-    flex-wrap: wrap;
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -62,21 +58,27 @@ p {
 .material-icons {
     color: rgb(121, 121, 121);
     cursor: default;
+    margin-bottom: 20px;
 }
-.icon {
-    width: 100vw;
-    position: absolute;
-    padding-bottom: 30vh;
+.ContainerBox {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    margin-bottom:30px;
 }
-.bottom {
-    height: 30vh;
+
+.footer {
+    height: 16.75rem;
     background-color: rgb(207, 207, 207);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
+
 input, textarea {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 35px;
     margin: 7px;
     border: none;
@@ -92,7 +94,8 @@ textarea {
     padding: 4px 2px;
 }
 #button {
-    width: 230px;
+    width: 100%;
+    max-width: 230px;
     background-color: #ff8d4a9d;
     cursor: pointer;
     font: bold 15px 'Noto Sans', sans-serif;
@@ -102,3 +105,17 @@ textarea {
 #button:active {
     box-shadow: 0 0 0 0 #ff742ea4, inset 1px 1px 1px 1px #ff742ea4 ;
 } 
+
+.paragraph {
+    display: block;
+}
+
+.marginParagraph {
+    margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 650px) {
+    .square {
+        flex-direction: column;
+    }
+  }

@@ -8,35 +8,40 @@
         <link rel="icon" href="favicon.png" id="favicon">
         <link rel="stylesheet" type="text/css" href="./Portifolio.css" media="screen">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!--Eu amo minha namoradaa-->
     </head>
     
     <body>
-        <div class="img">        
-            <img src="./foto.png" alt="ícone de perfil">
-        </div>
-        <div class="top"></div>
-        <div class="square">
-            <div class="icon">
+        <header class="containerHeader">
+            <div class="imgContainer">        
+                <img src="./foto.png" alt="ícone de perfil">
+            </div>
+        </header>
+        <section class="square">
+            <div class="ContainerBox">
                 <span class="material-icons" title="Pessoal">person</span>
+                <div class="box">
+                    <p>Meu namorado, que eu amo muito, que me motiva e me inspira a estudar todos os dias</p>
+                </div>
+            </div>
+            <div class="ContainerBox">
                 <span class="material-icons" title="Acadêmico">school</span>
+                <div class="box">
+                    <p>Cursando graduação em Tecnologia em Sistemas para Internet.</p>
+                </div>
+            </div>
+            <div class="ContainerBox">
                 <span class="material-icons" title="Profissional">work</span>
+                <div class="box">
+                    <p class="paragraph marginParagraph">Ainda não rolou, mas a esperança é a última que morre!</p>
+                    <p class="paragraph">Ps.: eu sei que eu ainda nem tentei.</p>
+                </div>
             </div>
-            <div class="box">
-                <p>Meu namorado, que eu amo muito, que me motiva e me inspira a estudar todos os dias</p>
-            </div>
-            <div class="box">
-                <p>Cursando graduação em Tecnologia em Sistemas para Internet.</p>
-            </div>
-            <div class="box">
-                <p>Ainda não rolou, mas a esperança é a última que morre!<br><br><br><br><br><br>Ps.: eu sei que eu ainda nem tentei.</p>
-            </div>
-        </div>
-        <div class="bottom">
+        </section>
+        <footer class="footer">
             <input type="email" placeholder=" E-mail">
             <input type="text" placeholder=" Nome">
             <textarea cols="30" rows="5" placeholder=" Descrição:" maxlength="200"></textarea>
             <input id="button" type="button" value="Enviar">
-        </div>
+        </footer>
     </body>
 </html>
