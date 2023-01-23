@@ -42,16 +42,16 @@ section {
     flex-wrap: wrap;
     height: calc(100vh - 32.65rem);
     min-height: 400px;
+    padding: 0px 20px;
 }
 
 .box {
     width: 100%;
     max-width: 350px;
-    min-width: 230px;
+    min-width: 180px;
     height: 250px;
     background-color: rgb(231, 231, 231);
     padding: 40px 25px;
-    margin: 0px 20px;
     color: rgb(121, 121, 121);
     border-radius: 5%;
     display: block;
@@ -132,14 +132,22 @@ textarea {
     margin-bottom: 60px;
 }
 
+/* @media only screen and (max-width: 780px) {
+    .square {
+        flex-direction: column;
+        height: calc(100vh - 10.6rem);
+    }
+} */
+
 @media only screen and (max-width: 780px) {
     .square {
         height: calc(100vh - 10.6rem);
+        min-height: 1000px;
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 1230px) {
     .square {
-        flex-direction: column;
+        height: calc(100vh - 10.6rem);
     }
 }
