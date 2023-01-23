@@ -132,13 +132,6 @@ textarea {
     margin-bottom: 60px;
 }
 
-/* @media only screen and (max-width: 780px) {
-    .square {
-        flex-direction: column;
-        height: calc(100vh - 10.6rem);
-    }
-} */
-
 @media only screen and (max-width: 780px) {
     .square {
         height: calc(100vh - 10.6rem);
