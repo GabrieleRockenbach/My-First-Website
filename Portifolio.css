@@ -3,10 +3,15 @@
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
 }
-div,header,footer,section {
+
+div,
+header,
+footer,
+section {
     display: flex;
     justify-content: space-around;
 }
+
 .containerHeader {
     width: 100%;
     height: 10.6rem;
@@ -19,20 +24,24 @@ div,header,footer,section {
 
 .imgContainer {
     position: absolute;
-    top:5.3rem;
+    top: 5.3rem;
 }
 
-.imgContainer > img {
+.imgContainer>img {
     width: 100%;
     max-width: 155px;
     border-radius: 50%;
-    box-shadow: 1px 1px 6px #ff9955 , -1px -1px 6px #ff9955;
+    box-shadow: 1px 1px 6px #ff9955, -1px -1px 6px #ff9955;
 }
 
 .square {
+    max-width: 1300px;
+    margin: 0 auto;
     background-color: rgb(255, 255, 255);
     align-items: center;
     flex-wrap: wrap;
+    height: calc(100vh - 32.65rem);
+    min-height: 400px;
 }
 
 .box {
@@ -48,23 +57,26 @@ div,header,footer,section {
     display: block;
 }
 
-p { 
+p {
     text-align: justify;
     font-size: 0.8em;
 }
+
 ::-webkit-scrollbar {
     width: 0px;
 }
+
 .material-icons {
     color: rgb(121, 121, 121);
     cursor: default;
     margin-bottom: 20px;
 }
+
 .ContainerBox {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     align-items: center;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
 .footer {
@@ -76,7 +88,8 @@ p {
     padding: 20px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     max-width: 350px;
     height: 35px;
@@ -85,14 +98,18 @@ input, textarea {
     border-radius: 8px;
     font-size: 13px;
 }
-input:focus , textarea:focus {
+
+input:focus,
+textarea:focus {
     outline: 0;
 }
+
 textarea {
     height: 80px;
     resize: none;
     padding: 4px 2px;
 }
+
 #button {
     width: 100%;
     max-width: 230px;
@@ -102,9 +119,10 @@ textarea {
     color: white;
     box-shadow: 1px 1px 1px #ff742ea4
 }
+
 #button:active {
-    box-shadow: 0 0 0 0 #ff742ea4, inset 1px 1px 1px 1px #ff742ea4 ;
-} 
+    box-shadow: 0 0 0 0 #ff742ea4, inset 1px 1px 1px 1px #ff742ea4;
+}
 
 .paragraph {
     display: block;
@@ -114,8 +132,14 @@ textarea {
     margin-bottom: 60px;
 }
 
+@media only screen and (max-width: 780px) {
+    .square {
+        height: calc(100vh - 10.6rem);
+    }
+}
+
 @media only screen and (max-width: 650px) {
     .square {
         flex-direction: column;
     }
-  }
+}
